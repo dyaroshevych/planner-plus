@@ -1,0 +1,40 @@
+@import "../../index.scss";
+
+.tasks__add {
+  &-container {
+    margin-top: -1rem;
+    .button {
+      margin-left: 1rem;
+    }
+  }
+
+  &-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 0.86rem;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+
+    @include tablet-1 {
+      margin-bottom: 0.47rem;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2rem;
+      margin-right: 1.5rem;
+    }
+
+    &-icon img {
+      width: 1.4rem;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../index.scss";
+
+.sidebar__popup {
+  position: fixed;
+  z-index: 2;
+  bottom: 2rem;
+  left: 4rem;
+  padding: 1.8rem;
+  background-color: #fff;
+  box-shadow: 0px 0.6rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+
+  @include desktop {
+    left: 2rem;
+  }
+
+  &-container {
+    position: relative;
+  }
+
+  &-close {
+    position: absolute;
+    right: -1.8rem;
+    top: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  & .badge {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+
+    &.active {
+      border: 2px solid #525252;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &-input,
+  &-button {
+    width: 100%;
+  }
+
+  &-colors {
+    margin: 1.3rem 0;
+    display: flex;
+  }
+}

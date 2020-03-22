@@ -1,0 +1,72 @@
+@import "../../index.scss";
+
+.tasks__folder {
+  &-heading {
+    $self: &;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 2rem;
+    margin-bottom: 3rem;
+
+    @include tablet-1 {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    &-text,
+    &-edit {
+      cursor: pointer;
+    }
+
+    &-text {
+      font-family: "Montserrat", -apple-system, system-ui, sans-serif;
+      font-weight: 700;
+      font-size: 3.2rem;
+      padding-right: 0.5rem;
+      max-width: 30rem;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+
+      @include tablet-1 {
+        font-size: 2.7rem;
+      }
+
+      &:hover {
+        & ~ #{$self}-edit {
+          opacity: 0.3;
+        }
+      }
+    }
+
+    &-edit {
+      opacity: 0.15;
+      padding: 1rem;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &-edit {
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 2.4rem;
+    margin-bottom: 3.05rem;
+
+    @include desktop {
+      padding-bottom: 2.45rem;
+      margin-bottom: 3rem;
+    }
+
+    @include tablet-1 {
+      padding-bottom: 1.6rem;
+      margin-bottom: 1.02rem;
+    }
+
+    &-button {
+      margin-left: 1rem;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+@import "../../index.scss";
+
+.sidebar__list {
+  $self: &;
+
+  &:not(:last-of-type) {
+    margin-bottom: 2.5rem;
+  }
+  &:first-of-type li:first-of-type {
+    margin-bottom: 2.5rem;
+  }
+
+  & li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    padding: 1rem 2.5rem 1rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    @include tablet-1 {
+      font-size: 1.6rem;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+
+      #{$self}-item-remove {
+        visibility: visible;
+        opacity: 0.3;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    &.active {
+      background-color: #fff;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    & span:first-of-type {
+      margin-right: 1.5rem;
+      display: flex;
+      justify-content: center;
+
+      // @include tablet-2 {
+      //   margin-right: 0.5rem;
+      // }
+
+      & img {
+        width: 1.3rem;
+      }
+    }
+  }
+
+  &-item-name {
+    width: 12rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    // @include tablet-2 {
+    //   display: none;
+    // }
+  }
+
+  &-item-remove {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-1rem, -50%);
+    padding: 0.2rem;
+    opacity: 0;
+    transition: all 0.25s ease;
+
+    @include tablet-1 {
+      transform: translate(-0.8rem, -50%);
+    }
+  }
+
+  & li#{$self}-button {
+    opacity: 0.5;
+    border-radius: 0;
+    margin-top: 2.5rem;
+
+    &:hover,
+    &.active {
+      opacity: 1;
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
