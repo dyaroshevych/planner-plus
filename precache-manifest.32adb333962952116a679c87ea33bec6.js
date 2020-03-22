@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7cb1452e6ab90b5b100ebdbf1613d47a",
+    "revision": "dfc54592eaf6a55e93a2a8e9a8b225c3",
     "url": "/planner-plus/index.html"
   },
   {
-    "revision": "c75090571159e9c30940",
+    "revision": "c2182e13545e0fe4e581",
     "url": "/planner-plus/static/css/main.5a28f5be.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/planner-plus/static/js/2.5a84f7c8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c75090571159e9c30940",
-    "url": "/planner-plus/static/js/main.6473c7d6.chunk.js"
+    "revision": "c2182e13545e0fe4e581",
+    "url": "/planner-plus/static/js/main.36d39614.chunk.js"
   },
   {
     "revision": "d11a619be7634e5464ea",
