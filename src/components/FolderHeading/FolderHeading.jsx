@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
+import { editSvg } from "../../assets/img";
 import "./FolderHeading.scss";
-import editSvg from "../../assets/img/edit.svg";
 
-const TaskHeading = ({ list, listIdx, listSelect, listEdit }) => {
+const FolderHeading = ({ list, listIdx, listSelect, listEdit }) => {
   const listEditHandler = () => {
     setEditingFolder(false);
     if (folderInputValue && folderInputValue !== list.name) {
@@ -82,4 +82,4 @@ const TaskHeading = ({ list, listIdx, listSelect, listEdit }) => {
   );
 };
 
-export default TaskHeading;
+export default FolderHeading;

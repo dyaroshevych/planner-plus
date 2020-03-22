@@ -1,6 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import Badge from "../Badge/Badge";
+
+import { Badge } from "../";
 
 import removeSvg from "../../assets/img/remove.svg";
 import "./Lists.scss";

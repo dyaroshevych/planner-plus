@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
+import { plusSvg } from "../../assets/img";
 import "./AddTaskForm.scss";
-import plusSvg from "../../assets/img/plus.svg";
 
 const AddTaskForm = ({ addTask }) => {
   const clickAddTaskHandler = () => {
@@ -18,20 +18,10 @@ const AddTaskForm = ({ addTask }) => {
   const toggleAddTaskHandler = () => {
     setTaskInputValue("");
     setAddingTask(!addingTask);
-    // if (editingFolder) {
-    //   toggleEditFolderHandler();
-    // }
   };
 
   const [addingTask, setAddingTask] = useState(false);
   const [taskInputValue, setTaskInputValue] = useState("");
-  // const [taskName, setTaskName] = useState("");
-
-  // if (taskName !== list.name) {
-  //   setFolderName(list.name);
-  //   setFolderInputValue(list.name);
-  //   setEditingFolder(false);
-  // }
 
   return (
     <div className="tasks__item tasks__add-container">

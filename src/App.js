@@ -3,11 +3,9 @@ import { Switch, Route, useHistory } from "react-router-dom";
 import DEFAULT_DATA from "./defaultData.json";
 import uuidv4 from "./uuidv4";
 
-import Lists from "./components/Lists/Lists";
-import AddListForm from "./components/AddListForm/AddListForm";
-import Folder from "./components/Folder/Folder";
+import { Lists, AddListForm, Folder } from "./components";
 
-import menuSvg from "./assets/img/menu.svg";
+import { menuSvg } from "./assets/img";
 import "./App.scss";
 
 const allTasksItem = {

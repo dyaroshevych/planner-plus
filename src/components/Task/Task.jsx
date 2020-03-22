@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
+import { editSvg, removeSvg } from "../../assets/img";
 import "./Task.scss";
-
-import removeSvg from "../../assets/img/remove.svg";
-import editSvg from "../../assets/img/edit.svg";
 
 const Task = ({ task, toggleTask, removeTask, editTask }) => {
   const taskEditHandler = () => {
@@ -114,4 +112,4 @@ const Task = ({ task, toggleTask, removeTask, editTask }) => {
   );
 };
 
-export default Task;
+export default React.memo(Task);

@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import Lists from "../Lists/Lists";
-import Badge from "../Badge/Badge";
 
-import plusSvg from "../../assets/img/plus.svg";
-import closeSvg from "../../assets/img/close.svg";
+import { Lists, Badge } from "../";
+
+import { plusSvg, closeSvg } from "../../assets/img";
 import "./AddListForm.scss";
 
 const AddListForm = ({ colors, listAdd }) => {
@@ -29,6 +28,7 @@ const AddListForm = ({ colors, listAdd }) => {
   const [visiblePopup, setVisiblePopup] = useState(false);
   const [selectedColor, setSelectedColor] = useState(0);
   const [inputValue, setInputValue] = useState("");
+
   return (
     <div>
       <Lists

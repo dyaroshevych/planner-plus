@@ -1,8 +1,6 @@
 import React from "react";
 
-import Task from "../Task/Task";
-import FolderHeading from "../FolderHeading/FolderHeading";
-import AddTaskForm from "../AddTaskForm/AddTaskForm";
+import { Task, FolderHeading, AddTaskForm } from "../";
 
 import "./Folder.scss";
 

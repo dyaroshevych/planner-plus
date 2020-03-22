@@ -1,5 +1,5 @@
 export { default as AddListForm } from "./AddListForm/AddListForm";
-export { default as addTaskForm } from "./addTaskForm/addTaskForm";
+export { default as AddTaskForm } from "./AddTaskForm/AddTaskForm";
 export { default as Badge } from "./Badge/Badge";
 export { default as Folder } from "./Folder/Folder";
 export { default as FolderHeading } from "./FolderHeading/FolderHeading";
