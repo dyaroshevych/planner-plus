@@ -65,7 +65,7 @@ const FolderHeading = ({ list, listIdx, listSelect, listEdit }) => {
             style={{ color: list.color }}
             onClick={() => {
               listSelect(list.id);
-              history.push(`/lists/${listIdx}`);
+              history.push(`/planner-plus/lists/${listIdx}`);
             }}
           >
             {list.name}

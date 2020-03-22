@@ -42,7 +42,10 @@ const Lists = ({ lists, listClick, listRemove }) => {
             onClick={
               listClick
                 ? listClick
-                : () => history.push(idx ? `/lists/${idx}` : "/")
+                : () =>
+                    history.push(
+                      idx ? `/planner-plus/lists/${idx}` : "/planner-plus"
+                    )
             }
           >
             {generateBadge(item.icon, true && item.color)}

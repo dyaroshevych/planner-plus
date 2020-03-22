@@ -82,7 +82,7 @@ const App = () => {
     } else {
       updateLists([{ ...allTasksItem }, newList]);
     }
-    history.push(`/lists/${lists.length}`);
+    history.push(`planner-plus/lists/${lists.length}`);
   };
 
   //deletes list by ID, saves changes to localStorage
@@ -93,11 +93,11 @@ const App = () => {
       const listIdx = updatedLists.findIndex(list => list.id === listId);
       if (updatedLists[listIdx].active) {
         updatedLists[0].active = true;
-        history.replace("/");
+        history.replace("planner-plus/");
       }
       updatedLists.splice(listIdx, 1);
     } else {
-      history.push("/");
+      history.push("planner-plus/");
     }
     const updatedTasks = tasks.filter(task => task.listId !== listId);
     updateLists(updatedLists);
@@ -172,14 +172,17 @@ const App = () => {
   const history = useHistory();
 
   useEffect(() => {
-    if (history.location.pathname === "/") {
+    if (history.location.pathname === "/planner-plus") {
       listSelectHandler("allTasks");
     } else {
-      const listIdx = Number(history.location.pathname.split("lists/")[1]);
+      const listIdx = Number(
+        history.location.pathname.split("/planner-plus/lists/")[1]
+      );
+      console.log(listIdx);
       if (listIdx && listIdx < lists.length) {
         listSelectHandler(lists[listIdx].id);
       } else {
-        history.replace("/");
+        history.replace("/planner-plus");
       }
     }
   }, [lists.length, history.location.pathname]);
@@ -199,7 +202,7 @@ const App = () => {
 
       <div className="tasks">
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/planner-plus">
             {() => {
               if (!tasks.length) {
                 return <div className="tasks__blank">No Tasks Yet</div>;
@@ -228,11 +231,11 @@ const App = () => {
               });
             }}
           </Route>
-          <Route path="/lists/">
+          <Route path="/planner-plus/lists">
             {() => {
               const activeListIdx = lists.findIndex(list => list.active);
               if (activeListIdx === -1) {
-                history.replace("/");
+                history.replace("/planner-plus");
                 return null;
               }
               return (
