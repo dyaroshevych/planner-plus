@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/planner-plus/static/css/main.5a28f5be.chunk.css",
+    "main.js": "/planner-plus/static/js/main.895c9349.chunk.js",
+    "main.js.map": "/planner-plus/static/js/main.895c9349.chunk.js.map",
+    "runtime-main.js": "/planner-plus/static/js/runtime-main.9b5fc077.js",
+    "runtime-main.js.map": "/planner-plus/static/js/runtime-main.9b5fc077.js.map",
+    "static/js/2.5a84f7c8.chunk.js": "/planner-plus/static/js/2.5a84f7c8.chunk.js",
+    "static/js/2.5a84f7c8.chunk.js.map": "/planner-plus/static/js/2.5a84f7c8.chunk.js.map",
+    "index.html": "/planner-plus/index.html",
+    "precache-manifest.2654002d53bffb048a242674f5be7e82.js": "/planner-plus/precache-manifest.2654002d53bffb048a242674f5be7e82.js",
+    "service-worker.js": "/planner-plus/service-worker.js",
+    "static/css/main.5a28f5be.chunk.css.map": "/planner-plus/static/css/main.5a28f5be.chunk.css.map",
+    "static/js/2.5a84f7c8.chunk.js.LICENSE.txt": "/planner-plus/static/js/2.5a84f7c8.chunk.js.LICENSE.txt",
+    "static/media/close.svg": "/planner-plus/static/media/close.51b6f612.svg",
+    "static/media/edit.svg": "/planner-plus/static/media/edit.72322324.svg",
+    "static/media/menu.svg": "/planner-plus/static/media/menu.77291a97.svg",
+    "static/media/plus.svg": "/planner-plus/static/media/plus.263881f5.svg",
+    "static/media/remove.svg": "/planner-plus/static/media/remove.b175098f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9b5fc077.js",
+    "static/js/2.5a84f7c8.chunk.js",
+    "static/css/main.5a28f5be.chunk.css",
+    "static/js/main.895c9349.chunk.js"
+  ]
+}
