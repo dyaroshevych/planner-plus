@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 500" version="1.1">
+<g id="root" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<rect fill="#ffffff" x="0" y="0" width="500" height="500"/>
+<g id="Group-2" transform="translate(48.000000, 200.000000)">
+<rect x="0" y="0" width="412" height="100"/>
+<text opacity=".5" font-family="Montserrat" font-size="80" font-style="normal" font-weight="700" fill="#f73f52" data-text-alignment="C">
+<tspan x="165.9921875" y="75.5">P+</tspan>
+</text>
+</g>
+<g transform="translate(40.000000, 200.000000)">
+<rect x="0" y="0" width="412" height="100"/>
+<text font-family="Montserrat" font-size="80" font-style="normal" font-weight="700" fill="#f73f52" data-text-alignment="C">
+<tspan x="165.9921875" y="75.5">P+</tspan>
+</text>
+</g>
+</g>
+</svg>
