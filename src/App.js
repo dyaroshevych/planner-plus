@@ -178,7 +178,6 @@ const App = () => {
       const listIdx = Number(
         history.location.pathname.split("/planner-plus/lists/")[1]
       );
-      console.log(listIdx);
       if (listIdx && listIdx < lists.length) {
         listSelectHandler(lists[listIdx].id);
       } else {
