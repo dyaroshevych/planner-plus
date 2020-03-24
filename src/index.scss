@@ -1,6 +1,6 @@
 $desktop-width: 1024px;
 $tablet-1-width: 860px;
-$tablet-2-width: 700px;
+$tablet-2-width: 699px;
 
 @mixin desktop {
   @media (max-width: #{$desktop-width}) {

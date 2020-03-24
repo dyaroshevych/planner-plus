@@ -3,7 +3,7 @@ import { Switch, Route, useHistory } from "react-router-dom";
 import DEFAULT_DATA from "./defaultData.json";
 import uuidv4 from "./uuidv4";
 
-import { Lists, AddListForm, Folder } from "./components";
+import { Lists, AddListForm, Folder, MenuButton } from "./components";
 
 import { menuSvg } from "./assets/img";
 import "./App.scss";
@@ -155,19 +155,9 @@ const App = () => {
     updateLists(updatedLists);
   };
 
-  const toggleMenuHandler = () => {};
-
   const colors = DEFAULT_DATA.colors;
   const [lists, setLists] = useState(generateLists());
   const [tasks, setTasks] = useState(generateTasks());
-  const [menuVisible, setMenuVisible] = useState(window.innerWidth > 700);
-
-  window.addEventListener("resize", () => {
-    const isMobile = window.innerWidth < 700;
-    if (menuVisible === isMobile) {
-      setMenuVisible(!isMobile);
-    }
-  });
 
   const history = useHistory();
 
@@ -188,17 +178,11 @@ const App = () => {
 
   return (
     <div className="todo">
-      {menuVisible ? (
-        <div className="sidebar">
-          <Lists lists={lists} listRemove={listRemoveHandler} />
-          <AddListForm colors={colors} listAdd={listAddHandler} />
-        </div>
-      ) : (
-        <div className="todo__menu-button" onClick={toggleMenuHandler}>
-          menu
-        </div>
-      )}
-
+      <MenuButton />
+      <div className="sidebar">
+        <Lists lists={lists} listRemove={listRemoveHandler} />
+        <AddListForm colors={colors} listAdd={listAddHandler} />
+      </div>
       <div className="tasks">
         <Switch>
           <Route exact path="/planner-plus">

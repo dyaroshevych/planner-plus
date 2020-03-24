@@ -22,7 +22,7 @@ ol {
   display: flex;
   min-height: 100vh;
   max-height: 100vh;
-  overflow-y: hidden;
+  overflow: hidden;
 
   @include tablet-2 {
     flex-direction: row-reverse;
@@ -52,7 +52,7 @@ ol {
 }
 .sidebar {
   background-color: #f4f6f8;
-  width: fit-content;
+  min-width: fit-content;
   padding: 4rem;
   border-right: 1px solid #f1f1f1;
   overflow-x: visible;
@@ -66,7 +66,10 @@ ol {
   }
 
   @include tablet-2 {
-    transform: translateX(2rem);
+    transform: translateX(21.6rem);
+    box-shadow: 0 0 10px -5px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transition: transform 0.5s ease;
   }
 }
 .tasks {
@@ -84,7 +87,7 @@ ol {
   @include tablet-2 {
     flex: unset;
     min-width: 100vw;
-    transform: translateX(2rem);
+    transform: translateX(20.6rem);
   }
 
   &__blank {
