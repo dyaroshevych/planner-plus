@@ -9,58 +9,14 @@
       "id": "cb697277-6ab4-4133-be77-fb2bda7d99fc",
       "colorId": 7,
       "name": "Books"
+    },
+    {
+      "id": "dfdaf9ad-c7a9-4141-be16-7617fa91920c",
+      "colorId": 3,
+      "name": "Other"
     }
   ],
-  "tasks": [
-    {
-      "id": "c85d7007-52aa-48bd-bbf4-b9b910965f89",
-      "listId": "b86ac249-41e3-4cb3-b80b-274d57ab9de5",
-      "name": "Apples x5",
-      "completed": false
-    },
-    {
-      "id": "92edfa8d-0065-4d53-09a4-e426a74f9750",
-      "listId": "b86ac249-41e3-4cb3-b80b-274d57ab9de5",
-      "name": "Oranges x4",
-      "completed": false
-    },
-    {
-      "id": "d96cc57a-4413-4965-ba0a-71015fe74aa4",
-      "listId": "cb697277-6ab4-4133-be77-fb2bda7d99fc",
-      "name": "You Don't Know JS Yet: Get Started - 2nd Edition",
-      "completed": true
-    },
-    {
-      "id": "5a8f9c1e-0c0a-4b09-b8df-04a0ea9f1327",
-      "listId": "cb697277-6ab4-4133-be77-fb2bda7d99fc",
-      "name": "You Don't Know JS Yet: Scope & Closures - 2nd Edition",
-      "completed": true
-    },
-    {
-      "id": "7b305355-70eb-4571-b2ac-ada2f88d602d",
-      "listId": "cb697277-6ab4-4133-be77-fb2bda7d99fc",
-      "name": "You Don't Know JS Yet: Objects & Classes - 2nd Edition",
-      "completed": true
-    },
-    {
-      "id": "f08b58fa-4494-4c27-bb90-13e5c70b6b37",
-      "listId": "cb697277-6ab4-4133-be77-fb2bda7d99fc",
-      "name": "You Don't Know JS Yet: Types & Grammar - 2nd Edition",
-      "completed": true
-    },
-    {
-      "id": "0bfa09a7-0b70-4ac9-b13f-222eea071c0b",
-      "listId": "cb697277-6ab4-4133-be77-fb2bda7d99fc",
-      "name": "You Don't Know JS Yet: Async & Performance - 2nd Edition",
-      "completed": false
-    },
-    {
-      "id": "30ad897f-2ae9-4d56-b2d4-4b0a4d781434",
-      "listId": "cb697277-6ab4-4133-be77-fb2bda7d99fc",
-      "name": "You Don't Know JS Yet: ES.Next & Beyond - 2nd Edition",
-      "completed": false
-    }
-  ],
+  "tasks": [],
   "colors": [
     {
       "id": 0,
