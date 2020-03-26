@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/planner-plus/static/css/main.e985bec4.chunk.css",
+    "main.css": "/planner-plus/static/css/main.fce3de3e.chunk.css",
     "main.js": "/planner-plus/static/js/main.2fc77d71.chunk.js",
     "main.js.map": "/planner-plus/static/js/main.2fc77d71.chunk.js.map",
     "runtime-main.js": "/planner-plus/static/js/runtime-main.9b5fc077.js",
@@ -8,9 +8,9 @@
     "static/js/2.5a84f7c8.chunk.js": "/planner-plus/static/js/2.5a84f7c8.chunk.js",
     "static/js/2.5a84f7c8.chunk.js.map": "/planner-plus/static/js/2.5a84f7c8.chunk.js.map",
     "index.html": "/planner-plus/index.html",
-    "precache-manifest.ab3075facff14952caed1c7a87c9cc21.js": "/planner-plus/precache-manifest.ab3075facff14952caed1c7a87c9cc21.js",
+    "precache-manifest.b135f94df36b1ae07c1ed98d97366555.js": "/planner-plus/precache-manifest.b135f94df36b1ae07c1ed98d97366555.js",
     "service-worker.js": "/planner-plus/service-worker.js",
-    "static/css/main.e985bec4.chunk.css.map": "/planner-plus/static/css/main.e985bec4.chunk.css.map",
+    "static/css/main.fce3de3e.chunk.css.map": "/planner-plus/static/css/main.fce3de3e.chunk.css.map",
     "static/js/2.5a84f7c8.chunk.js.LICENSE.txt": "/planner-plus/static/js/2.5a84f7c8.chunk.js.LICENSE.txt",
     "static/media/close.svg": "/planner-plus/static/media/close.51b6f612.svg",
     "static/media/edit.svg": "/planner-plus/static/media/edit.72322324.svg",
@@ -21,7 +21,7 @@
   "entrypoints": [
     "static/js/runtime-main.9b5fc077.js",
     "static/js/2.5a84f7c8.chunk.js",
-    "static/css/main.e985bec4.chunk.css",
+    "static/css/main.fce3de3e.chunk.css",
     "static/js/main.2fc77d71.chunk.js"
   ]
 }
