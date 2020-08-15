@@ -6,6 +6,7 @@ Technologies used:
 - CSS(SCSS)
 - JavaSctipt
 - ReactJS
+- Redux
 
 React libraries used:
 
