@@ -66,7 +66,7 @@ const editTask = (state, action) => {
     return { ...task };
   });
 
-  updatedTasks[taskIndex].text = action.payload.udpatedText;
+  updatedTasks[taskIndex].text = action.payload.updatedText;
 
   const updatedState = {
     data: updatedTasks,

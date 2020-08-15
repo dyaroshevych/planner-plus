@@ -17,14 +17,16 @@ const Task = ({
   onEditTask,
   onRemoveTask,
 }) => {
-  const handleFormSubmit = () => {
-    setEditing(false);
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
 
     if (inputValue && inputValue !== text) {
       onEditTask(id, inputValue);
     } else {
       setInputValue(text);
     }
+
+    setEditing(false);
   };
 
   const handleInputChange = (e) => {

@@ -27,7 +27,7 @@ export const toggleTaskSelection = (id) => {
 export const editTask = (id, updatedText) => {
   return {
     type: EDIT_TASK,
-    disptach: {
+    payload: {
       id,
       updatedText,
     },

@@ -22,8 +22,10 @@ const getButtonClasses = (className, color) => {
   return buttonClasses.join(" ");
 };
 
-const Button = ({ className, color, children }) => (
-  <button className={getButtonClasses(className, color)}>{children}</button>
+const Button = ({ className, color, onClick = () => {}, children }) => (
+  <button className={getButtonClasses(className, color)} onClick={onClick}>
+    {children}
+  </button>
 );
 
 export default Button;
