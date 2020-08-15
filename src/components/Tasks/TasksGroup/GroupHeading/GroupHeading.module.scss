@@ -1,0 +1,66 @@
+@import "index.scss";
+
+.GroupHeading {
+  $self: &;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+
+  @include tablet-1 {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &_text {
+    cursor: pointer;
+    font-family: "Montserrat", -apple-system, system-ui, sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    padding-right: 0.5rem;
+    max-width: 30rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    @include tablet-1 {
+      font-size: 2.7rem;
+    }
+
+    &:hover {
+      & ~ #{$self}_button {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &_button {
+    opacity: 0.15;
+    padding: 1rem;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+.GroupHeadingForm {
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.96rem;
+
+  @include desktop {
+    padding-bottom: 2.45rem;
+    margin-bottom: 3rem;
+  }
+
+  @include tablet-1 {
+    padding-bottom: 2rem;
+    margin-bottom: 1.02rem;
+  }
+
+  &_button {
+    margin-left: 1rem;
+  }
+}

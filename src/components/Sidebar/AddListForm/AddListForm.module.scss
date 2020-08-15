@@ -1,0 +1,58 @@
+@import "index.scss";
+
+.AddListForm {
+  position: fixed;
+  z-index: 2;
+  bottom: 2rem;
+  left: 4rem;
+  padding: 1.8rem;
+  background-color: #fff;
+  box-shadow: 0px 0.6rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+
+  @include desktop {
+    left: 2rem;
+  }
+
+  @include tablet-2 {
+    right: 1rem;
+    bottom: 1rem;
+    left: unset;
+  }
+
+  &_closeButton {
+    position: absolute;
+    right: -1.8rem;
+    top: 0;
+    padding: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  &_input,
+  &_button {
+    width: 100%;
+  }
+
+  &_colorPalette {
+    margin: 1.3rem 0;
+    display: flex;
+  }
+}
+
+.Container {
+  position: relative;
+}
+
+.Badge {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+
+  &___active {
+    border: 2px solid #525252;
+  }
+
+  &:not(:last-of-type) {
+    margin-right: 0.5rem;
+  }
+}

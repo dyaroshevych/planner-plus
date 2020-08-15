@@ -1,0 +1,11 @@
+@import "index.scss";
+
+.TasksGroup {
+  &:not(:last-of-type) {
+    margin-bottom: 10rem;
+
+    @include tablet-1 {
+      margin-bottom: 8rem;
+    }
+  }
+}

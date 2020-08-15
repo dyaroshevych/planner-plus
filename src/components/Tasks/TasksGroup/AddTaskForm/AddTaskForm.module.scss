@@ -1,0 +1,41 @@
+@import "index.scss";
+
+.AddTask {
+  &_button {
+    display: flex;
+    align-items: center;
+    margin-top: 0.8rem;
+    // margin-left: 1rem;
+    opacity: 0.5;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    transition: opacity 0.15s ease;
+
+    @include tablet-1 {
+      margin-bottom: 0.47rem;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &Icon {
+      width: 1.4rem;
+      height: 1.4rem;
+      margin-left: 0.8rem;
+      margin-right: 1.8rem;
+
+      img {
+        width: 1.4rem;
+      }
+    }
+  }
+}
+
+.AddTaskForm {
+  margin-top: 0.6rem;
+
+  &_button {
+    margin-left: 1rem;
+  }
+}
