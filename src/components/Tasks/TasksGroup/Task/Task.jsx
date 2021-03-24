@@ -33,7 +33,8 @@ const Task = ({
     setInputValue(e.target.value);
   };
 
-  const toggleEditing = () => {
+  const toggleEditing = (event) => {
+    event.stopPropagation();
     setInputValue(text);
     setEditing(!editing);
   };
